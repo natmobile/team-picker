@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Example with External JSX</title>
+    <link rel="stylesheet" href="../shared/css/base.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <h1>Team Picker</h1>
+    <div id="container">
+      <p>
+        If you can see this, React is not working right. This is probably because you&apos;re viewing 
+        this on your file system instead of a web server.<br>
+        Try navigating to the React root 
+        <pre>
+          cd /path/to/react
+        </pre>
+        and running
+        <pre>
+          python -m SimpleHTTPServer
+        </pre>
+        and going to <a href="http://localhost:8000/examples/basic-jsx-external/">http://localhost:8000/examples/basic-jsx-external/</a>.
+      </p>
+    </div>
+    <script src="../../build/react.js"></script>
+    <script src="../../build/react-dom.js"></script>
+    <script src="../../build/browser.min.js"></script>
+    <script src="../../build/underscore-min.js"></script>
+    <script src="../../build/classnames.js"></script>
+    <script type="text/babel" src="example.js"></script>
+  </body>
+</html>

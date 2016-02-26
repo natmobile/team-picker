@@ -1,0 +1,17 @@
+.PlayerPanel {
+  background: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}
+.PlayerPanel > button {
+  float: right;
+}
+.TeamList {
+  background: #1baadd;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+}

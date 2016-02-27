@@ -112,7 +112,7 @@ var PlayerPanel = React.createClass({
         <span className="sat">{ p.sits }</span>
         <span className="streak">{ p.streak }</span>
         <span className="spacer">0</span>
-        <span className="remove" onClick={ this.props.deleteCallback.bind(null, this.props.name) }>X</span>
+        <span className="remove" onClick={ this.props.deleteCallback.bind(null, p.name) }>X</span>
       </span>
     );
   },

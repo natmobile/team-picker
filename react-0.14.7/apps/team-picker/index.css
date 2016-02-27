@@ -1,17 +1,68 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background: #084C61;
+}
+input[type="text"] {
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+  padding: 5px;
+  margin-left: 15px;
+  border: solid 1px #fff;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+form {
+  background: #073B4C;
+  padding: 10px;
+  margin-left: 2px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
 .PlayerPanel {
-  background: #f2f2f2;
-  border: 1px solid #e6e6e6;
-  border-radius: 10px;
-  margin: 5px;
+  background: #073B4C;
+  color: white;
+  border-radius: 3px;
+  margin: 3px;
+  padding-left: 4px;
+  display: inline-block;
+}
+.StatsWrapper > span {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+}
+.PlayerPanel > span.name {
+  width: 120px;
+  display: inline-block;
+}
+.StatsWrapper > span.sat { background: #EF476F;}
+.StatsWrapper > span.played { background: #06D6A0; }
+.StatsWrapper > span.streak { background: #118AB2;}
+.StatsWrapper > span.spacer {
+  background: #084C61;
+  color: #084C61;
+}
+
+.StatsWrapper > span.remove {
+  background: #EF476F;
+  width: initial;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+span.matchup {
+  background: #06D6A0;
   padding: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
-.PlayerPanel > button {
-  float: right;
-}
+
 .TeamList {
-  background: #1baadd;
-  border: 1px solid #e6e6e6;
-  border-radius: 10px;
   margin: 5px;
   padding: 5px;
+  display: inline-block;
 }

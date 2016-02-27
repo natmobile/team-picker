@@ -38,7 +38,14 @@ var Application = React.createClass({
     var name = this.refs.newName.value.toUpperCase();
     var present = _.findWhere(this.state.players, { name: name });
     if (!present && name != "") {
-      var new_players = _.union(this.state.players, [{ name: name }]);
+      var sits = Math.max(0, _.max(_.pluck(this.state.players.sits)) - 1);
+      var p = {
+        name: name,
+        plays: 0,
+        streak: 0,
+        sits: sits
+      }
+      var new_players = _.union(this.state.players, [p]);
       this.setState({ players: new_players });
     }
     return false;
@@ -53,8 +60,8 @@ var Application = React.createClass({
     _.map(sitting, function(p) { p.sits++; p.streak = 0; return p; });
     _.map(playing, function(p) { p.plays++; p.streak++; return p; });
 
-    var team1 = _.sample(players, 4);
-    var team2 = _.sample(_.difference(players, team1), 4);
+    var team1 = _.sample(playing, 4);
+    var team2 = _.sample(_.difference(playing, team1), 4);
     var games = this.state.games;
     games.push([team1, team2, sitting]);
 

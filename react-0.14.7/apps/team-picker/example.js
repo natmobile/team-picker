@@ -131,7 +131,6 @@ var PlayerPanel = React.createClass({
 
 var Game = React.createClass({
   render() {
-    console.log("rendering game");
     return (
       <div>
         <hr/>
